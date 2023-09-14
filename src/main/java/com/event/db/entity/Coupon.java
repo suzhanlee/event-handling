@@ -2,6 +2,7 @@ package com.event.db.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Version;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,9 @@ public class Coupon {
     private Long id;
 
     private Long quantity;
+
+    @Version
+    private Long version;
 
     public static Coupon create(Long id, Long quantity) {
         Coupon coupon = new Coupon();
