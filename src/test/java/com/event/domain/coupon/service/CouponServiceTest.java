@@ -90,7 +90,6 @@ class CouponServiceTest {
 
         // then
         assertThat(coupon.getQuantity()).isEqualTo(0L);
-
     }
 
     @Test
