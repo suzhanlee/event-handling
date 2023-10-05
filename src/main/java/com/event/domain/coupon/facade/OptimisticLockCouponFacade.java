@@ -18,9 +18,6 @@ public class OptimisticLockCouponFacade {
             } catch (Exception e) {
                 Thread.sleep(50);
             }
-
         }
     }
-
-
 }

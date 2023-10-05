@@ -17,8 +17,8 @@ public class Coupon {
 
     private Long quantity;
 
-    @Version
-    private Long version;
+//    @Version
+//    private Long version;
 
     public static Coupon create(Long id, Long quantity) {
         Coupon coupon = new Coupon();
